@@ -1,5 +1,5 @@
 STEAM_ROOT = "/home/USERNAME/.steam"		# Location of Steam
-GMOD_SERVER_ROOT = "/home/steam/GarrysMod"	# Location of Garry's Mod Server root (where you installed the server with steamcmd)
+GMOD_SERVER_ROOT = "/home/USERNAME/GarrysMod"	# Location of Garry's Mod Server root (where you installed the server with steamcmd)
 
 # Set the Steam Workshop collection IDs
 WORKSHOP_COLLECTION_IDS = [ "3257054311" ]
