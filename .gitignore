@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+addons/*
+addons_to_update
+last_updated
+workshop.lua
+config.py
