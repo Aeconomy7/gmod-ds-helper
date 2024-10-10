@@ -3,7 +3,3 @@ GMOD_SERVER_ROOT = "/home/USERNAME/GarrysMod"	# Location of Garry's Mod Server r
 
 # Set the Steam Workshop collection IDs
 WORKSHOP_COLLECTION_IDS = [ "3257054311" ]
-
-# Set the base URL for the Steam Workshop API, probably don't change these
-STEAM_WORKSHOP_API_GET_COLLECTION_DETAILS_URL = "https://api.steampowered.com/ISteamRemoteStorage/GetCollectionDetails/v1/"
-STEAM_WORKSHOP_API_GET_DETAILS_URL = "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/"

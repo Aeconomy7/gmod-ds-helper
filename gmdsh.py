@@ -1,6 +1,6 @@
 import os
 import requests
-import pdb
+#import pdb
 import subprocess
 import argparse
 from datetime import datetime
@@ -15,7 +15,6 @@ OUT_FOLDER = os.path.dirname(os.path.realpath(__file__)) + "/"
 # Set the base URL for the Steam Workshop API
 STEAM_WORKSHOP_API_GET_COLLECTION_DETAILS_URL = "https://api.steampowered.com/ISteamRemoteStorage/GetCollectionDetails/v1/"
 STEAM_WORKSHOP_API_GET_DETAILS_URL = "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/"
-
 
 #####################
 # UTILITY FUNCTIONS #
@@ -47,8 +46,7 @@ def display_banner():
 	print("	Steam Root:     " + STEAM_ROOT)
 	print("	Server Root:    " + GMOD_SERVER_ROOT)
 	print("	Script Folder:  " + OUT_FOLDER)
-	print("	Collection IDs: " + str(WORKSHOP_COLLECTION_IDS))
-
+	print("	Collection IDs: " + str(WORKSHOP_COLLECTION_IDS) + "\n")
 
 
 ########################
@@ -253,7 +251,7 @@ if __name__ == "__main__":
 	num_outdated_addons = 0
 
 	# Define script args
-	parser = argparse.ArgumentParser(description="Garry's Mod Dedicated Server Helper")
+	parser = argparse.ArgumentParser(description=display_banner())
 
 	parser.add_argument('-u', '--update', action='store_true', default=False, help='Update workshop.lua, if not present, a file named addons_to_check with addon ids must be present in ' + OUT_FOLDER)
 	parser.add_argument('-d', '--download', action='store_true', default=False, help='Download addons to update, if you want to download all addons, set last_updated file to 0')
